@@ -1,0 +1,47 @@
+article .actions {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+article svg.edit-button {
+  display: block;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+article svg.confirm-button {
+  font-size: 3rem;
+  width: 100%;
+}
+
+.player-theme-edit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+}
+
+.player-theme-edit img {
+  max-width: 1em;
+}
+
+.player-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  margin-bottom: 1em;
+}
+
+.player-stats h2,
+.player-stats h3 {
+  margin-bottom: 0;
+}
+
+.player-stats h3 {
+  font-family: 'Spectral SC', 'Spectral', sans-serif;
+}
+
+.player-stats select {
+  cursor: pointer;
+}

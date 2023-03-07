@@ -1,0 +1,37 @@
+.counters-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+
+.new-counter-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.counter-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 2em;
+  background-color: #00000020;
+  padding: 0.3em 1em 0.5em;
+  border-radius: 0.5em;
+}
+
+.counter-remove {
+  align-self: flex-end;
+}
+
+.counter-name {
+  text-transform: capitalize;
+}
+
+.counter-buttons {
+  display: flex;
+  gap: 0.5em;
+}

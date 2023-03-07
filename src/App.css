@@ -1,0 +1,85 @@
+.App {
+  text-align: center;
+  --font-family: 'Spectral'
+}
+
+/* Can be forced with data-theme="light" */
+[data-theme="light"],
+:root:not([data-theme="dark"]) {
+  --primary: #86879280;
+  --primary-hover: #2e2f3280;
+  --primary-focus: #2e2f3280;
+  --primary-inverse: #FFF;
+}
+
+/* Pink Dark scheme (Auto) */
+/* Automatically enabled if user has Dark mode enabled */
+@media only screen and (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --primary: #86879280;
+    --primary-hover: #2e2f3280;
+    --primary-focus: #2e2f3280;
+    --primary-inverse: #FFF;
+  }
+  :root:not([data-theme="light"]) .red {
+    --primary: hsl(10, 68%, 16%);
+    --primary-hover: hsl(10, 68%, 50%);
+    --primary-focus: hsl(11, 43%, 18%);
+    --primary-inverse: #FFF;
+    --card-background-color: rgb(107, 50, 50);
+  }
+  :root:not([data-theme="light"]) .blue {
+    --primary: hsl(236, 68%, 16%);
+    --primary-hover: hsl(239, 68%, 50%);
+    --primary-focus: hsl(236, 43%, 18%);
+    --primary-inverse: #FFF;
+    --card-background-color: rgb(50, 62, 107);
+  }
+  :root:not([data-theme="light"]) .green {
+    --primary: hsl(124, 68%, 16%);
+    --primary-hover: hsl(110, 38%, 53%);
+    --primary-focus: hsl(122, 43%, 18%);
+    --primary-inverse: #FFF;
+    --card-background-color: rgb(84, 121, 79);
+  }
+  :root:not([data-theme="light"]) .white {
+    --primary: hsl(60, 12%, 46%);
+    --primary-hover: hsl(56, 16%, 39%);
+    --primary-focus: hsl(62, 16%, 33%);
+    --primary-inverse: #FFF;
+    --card-background-color: rgb(196, 196, 159);
+    --color:#2c3d49;
+    --h2-color: #2c3d49;
+    --h3-color: #2c3d49;
+  }
+  :root:not([data-theme="light"]) .white svg {
+    fill: #2c3d49;
+  }
+
+  :root:not([data-theme="light"]) .black {
+    --primary: #000000;
+    --primary-hover: #252525;
+    --primary-focus: #1c1c1c;
+    --primary-inverse: #FFF;
+    --card-background-color: #1b1b1b;
+  }
+}
+
+/* Enabled if forced with data-theme="dark" */
+[data-theme="dark"] {
+  --primary: #86879280;
+  --primary-hover: #2e2f3280;
+  --primary-focus: #2e2f3280;
+  --primary-inverse: #FFF;
+}
+
+:root {
+  --form-element-active-border-color: var(--primary);
+  --form-element-focus-color: var(--primary-focus);
+  --switch-color: var(--primary-inverse);
+  --switch-checked-background-color: var(--primary);
+}
+
+.App[data-type="true"] header {
+  padding-bottom: 3rem;
+}
